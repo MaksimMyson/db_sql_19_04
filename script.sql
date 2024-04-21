@@ -7,7 +7,7 @@ CREATE TABLE NewCurators (
     Surname NVARCHAR(MAX) NOT NULL
 );
 
-CREATE TABLE NewDepartments (
+CREATE TABLE Departments (
     Id INT PRIMARY KEY IDENTITY,
     Building INT NOT NULL CHECK (Building BETWEEN 1 AND 5),
     Financing MONEY NOT NULL DEFAULT 0 CHECK (Financing >= 0),
